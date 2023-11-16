@@ -1,0 +1,60 @@
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--mantle);
+  height: 100vh;
+  padding: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--text);
+}
+
+section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--mantle);
+  background-color: var(--base);
+  box-shadow: 0px 0px 30px 1px var(--crust);
+}
+
+section input {
+  height: 0;
+  font-size: 0;
+}
+
+section:active input, section:hover input, section:focus input,
+section:focus-visible input, section:focus-within input {
+  height: 2rem;
+}
+
+section:focus, section:hover {
+  border-color: var(--mauve);
+  background-color: var(--surface0);
+  color: var(--lavender);
+  box-shadow: 0px 0px 30px 1px var(--semi-crust);
+}
+
+h2 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+input {
+  background-color: inherit;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  outline: none;
+  width: 100%;
+  font-weight: 400;
+  font-family: "JetBrains Mono", monospace;
+  line-height: 2rem;
+}
+
+input:active, input:hover, input:focus, input:focus-visible, input:focus-within {
+  border-color: var(--mauve);
+  background-color: var(--lavender);
+  color: var(--mantle);
+  font-size: 1rem;
+}
